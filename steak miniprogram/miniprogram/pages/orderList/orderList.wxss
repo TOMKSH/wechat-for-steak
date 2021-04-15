@@ -1,0 +1,132 @@
+.background{
+  width: 100%;
+  height: 1150rpx;
+  position: fixed;
+  top: 0;
+  background-color: rgb(240, 237, 236);
+}
+.noOrder{
+  width: 85%;
+  height: 700rpx;
+  background-color: white;
+  margin: 150rpx auto;
+  border-radius: 20rpx;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.aBox{
+  width: 200rpx;
+  height: 550rpx;
+  color: rgb(175, 172, 172);
+  line-height: 550rpx;
+}
+.btr{
+  width: 220rpx;
+  height: 60rpx;
+  border: 1rpx rgb(231, 200, 152) solid;
+  color: rgb(245, 4, 4);
+  line-height: 60rpx;
+  border-radius: 10rpx;
+}
+.aText{
+  text-align: center;
+  font-size: 26rpx;
+}
+.backBox{
+  width: 100%;
+  height: 1100rpx;
+  background-color: rgb(238, 244, 245);
+}
+.bigView{
+  width: 90%;
+  height: 250rpx;
+  margin:10rpx auto 10rpx;
+  display: flex;
+  background-color: white;
+  flex-flow: row wrap;
+}
+.scroll{
+  width: 70%;
+  height: 180rpx;
+  /* border: 1rpx rgb(170, 163, 163) solid; */
+  background-color: rgb(230, 235, 236);
+  margin: 10rpx;
+  overflow: hidden;
+  border-radius: 15rpx;
+}
+.listBox{
+  width: 98%;
+  height: 140rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  margin:5rpx;
+  position: relative;
+}
+.goodsStand{
+  width: 96%;
+  height: 90rpx;
+  justify-content: space-between;
+}
+.standScroll{
+  width: 60%;
+  height: 42rpx;
+  margin: 0 0 10rpx 10rpx;
+  line-height: 40rpx;
+  border-right: 4rpx rgb(202, 212, 211) solid;
+  border-left:4rpx rgb(202, 212, 211) solid;
+  border-top: 1rpx rgb(202, 212, 211) solid;
+  border-bottom:1rpx rgb(202, 212, 211) solid;
+  border-radius: 10rpx;
+}
+.standBox{
+  width: 1000rpx;
+  height: 40rpx;
+  font-size: 24rpx;
+  display: flex;
+  flex-flow: row;
+  color: rgb(131, 123, 120);
+}
+.box{
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+}
+.standard{
+  margin: 0 5rpx 0 5rpx;
+}
+.listBox .price{
+  position: absolute;
+  bottom: 50rpx;
+  right: 15rpx;
+}
+.s_box{
+  font-size: 28rpx;
+}
+.rightBox{
+  width: 150rpx;
+  height: 180rpx;
+  margin: 10rpx;
+  line-height: 180rpx;
+  text-align: center;
+  font-size: 30rpx;
+  position: relative;
+}
+.rightBox .state{
+  position: absolute;
+  height: 30rpx;
+  line-height: 30rpx;
+  top:0rpx;
+  right:0rpx;
+  font-size: 20rpx;
+  color: rgb(141, 139, 138);
+}
+.bottomBox{
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  margin: 0 0 0 10rpx;
+  color: rgb(131, 123, 120);
+}
+

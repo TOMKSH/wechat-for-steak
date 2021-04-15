@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/order/order",
+    "pages/orderList/orderList",
+    "pages/account/account",
+    "pages/account/coupon/coupon",
+    "pages/account/coupon/couponDetail/couponDetail",
+    "pages/index/associatorAct/associatorArt",
+    "pages/index/coupon/coupon",
+    "pages/index/booking/booking",
+    "pages/index/booking/bookingNumber/bookingNumber",
+    "pages/index/lottery/lottery",
+    "pages/index/point/point",
+    "pages/order/orderDetail/orderDetail",
+    "pages/index/point/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#000000",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#fff",
+    "enablePullDownRefresh": false,
+    "navigationStyle": "default"
+  },
+  "tabBar": {
+    "color": "#A2A2A2",
+    "selectedColor": "#ff6633",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "position":"bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/orderList/orderList",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/account/account",
+        "text": "我的"
+      }
+    ]
+  },
+  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

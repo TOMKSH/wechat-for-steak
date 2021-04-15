@@ -1,0 +1,112 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/4/4 下午4:34:43
+使用方法：
+在 F:\微信小程序开发\牛排店小程序\miniprogram\pages\order\order.wxml 引入模板
+
+```
+<import src="order.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 F:\微信小程序开发\牛排店小程序\miniprogram\pages\order\order.wxss 中引入样式
+```
+@import "./order.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view id="act">
+      <swiper autoplay="false" circular="true" id="actBox" indicator-active-color="#ff3300" indicator-dots="true" interval="3000" current="0">
+        <swiper-item style="position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);"></swiper-item>
+      </swiper>
+    </view>
+    <view id="bigBox">
+      <view id="smallList">
+        <view>
+          <view class="button sk-transparent sk-text-36-6667-327 sk-text" data-index="0" data-to="commend" style="background-color: white; border: none; background-position-x: 50%;">推荐</view>
+        </view>
+        <view>
+          <view class="button sk-transparent sk-text-36-6667-952 sk-text" data-index="1" data-to="setMeal" style="background-color: white; border: none; background-position-x: 50%;">套餐</view>
+        </view>
+        <view>
+          <view class="button sk-transparent sk-text-36-6667-7 sk-text" data-index="2" data-to="stapleFood" style="background-color: white; border: none; background-position-x: 50%;">主食</view>
+        </view>
+        <view>
+          <view class="button sk-transparent sk-text-36-6667-671 sk-text" data-index="3" data-to="snack" style="background-color: white; border: none; background-position-x: 50%;">小吃</view>
+        </view>
+        <view>
+          <view class="button sk-transparent sk-text-36-6667-787 sk-text" data-index="4" data-to="mikeTea" style="background-color: rgb(247, 247, 247); background-position-x: 50%;">奶茶</view>
+        </view>
+        <view>
+          <view class="button sk-transparent sk-text-36-6667-672 sk-text" data-index="5" data-to="fruitTea" style="background-color: white; border: none; background-position-x: 50%;">果茶</view>
+        </view>
+      </view>
+      <view id="list">
+        <scroll-view binddragend="scrollEnd" enhanced="true" scroll-anchoring="true" scroll-into-view="mikeTea" scroll-y="true" style="height: 650px;">
+          <view>
+            <view id="commend">
+              <text class="titleText sk-transparent sk-text-14-2857-210 sk-text">#推荐#</text>
+              <view>
+                <view class="listBox">
+                  <view class="img"></view>
+                  <view class="showBox">
+                    <view class="name sk-transparent sk-text-23-3333-852 sk-text" style="background-position-x: 50%;">西冷牛排</view>
+                    <view class="text sk-transparent sk-text-28-0000-363 sk-text">多汁美味</view>
+                  </view>
+                  <view class="standard sk-transparent sk-text-26-0000-112 sk-text" data-index="0" data-items="[object Object]" data-standard="[object Object],[object Object],[object Object],[object Object]" style="background-position-x: 50%;">
+                    规格
+                  </view>
+                </view>
+              </view>
+              <view>
+                <view class="listBox">
+                  <view class="img"></view>
+                  <view class="showBox">
+                    <view class="name sk-transparent sk-text-23-3333-112 sk-text" style="background-position-x: 50%;">嫩肩牛排</view>
+                    <view class="text sk-transparent sk-text-28-0000-380 sk-text">嫩肉多汁</view>
+                  </view>
+                  <view class="standard sk-transparent sk-text-26-0000-834 sk-text" data-index="1" data-items="[object Object]" data-standard="[object Object],[object Object],[object Object],[object Object]" style="background-position-x: 50%;">
+                    规格
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view id="setMeal">
+              <text class="titleText sk-transparent sk-text-14-2857-792 sk-text">#套餐#</text>
+              <view>
+                <view class="listBox">
+                  <view class="img"></view>
+                  <view class="showBox">
+                    <view class="name sk-transparent sk-text-23-3333-440 sk-text" style="background-position-x: 50%;">单人套餐1</view>
+                    <view class="text sk-transparent sk-text-28-0000-626 sk-text">多汁西冷牛排，配上清甜柠檬茶</view>
+                  </view>
+                  <view class="standard sk-transparent sk-text-26-0000-124 sk-text" data-index="0" data-items="[object Object]" data-standard="[object Object],[object Object],[object Object],[object Object]" style="background-position-x: 50%;">
+                    规格
+                  </view>
+                </view>
+              </view>
+              <view>
+                <view class="listBox">
+                  <view class="img"></view>
+                  <view class="showBox">
+                    <view class="name sk-transparent sk-text-23-3333-90 sk-text" style="background-position-x: 50%;">单人套餐2</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+    <view id="fixedBox" style="border: none;">
+      <view id="info" class="sk-transparent">¥97
+        <view class="numPoint sk-transparent sk-text-20-0000-168 sk-text" style="background-position-x: 50%;">1</view>
+      </view>
+      <view id="orderView">
+        <view id="orderButton" style="background-color: rgb(255, 102, 51); background-position-x: 50%;" class="sk-transparent sk-text-34-0000-838 sk-text">去下单</view>
+      </view>
+    </view>
+  </view>
+</template>

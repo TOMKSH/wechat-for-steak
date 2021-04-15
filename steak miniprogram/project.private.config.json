@@ -1,0 +1,71 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "点餐页",
+          "pathName": "pages/order/order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "正常启动",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "订单详情页",
+          "pathName": "pages/order/orderDetail/orderDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/orderList/orderList",
+          "pathName": "pages/orderList/orderList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人页面",
+          "pathName": "pages/account/account",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "积分商城",
+          "pathName": "pages/index/point/point",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "预约",
+          "pathName": "pages/index/booking/booking",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/booking/bookingNumber/bookingNumber",
+          "pathName": "pages/index/booking/bookingNumber/bookingNumber",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/associatorAct/associatorArt",
+          "pathName": "pages/index/associatorAct/associatorArt",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

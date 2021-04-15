@@ -1,0 +1,35 @@
+<!--pages/associatorAct/associatorArt.wxml-->
+<!-- 主体部分 -->
+<view id="box">
+  <!-- 正在进行页面，用于显示正在进行的任务 -->
+  <view id="underwayBox" class="box">
+    <!-- 显示任务进度模块 -->
+    <view id="activeBox">
+      <!-- 圆形进度条中心的文字模块 -->
+      <view class="circleText">
+        <text class="num">{{num}}</text>
+        <view class="line"></view>
+        <text class="total">{{total}}</text>
+      </view>
+      <!-- 圆形进度条 -->
+      <canvas canvas-id="activeCanvas" class="canvas"></canvas>
+      <canvas canvas-id="activeCanvas_p" class="canvas progress"></canvas>
+       <!-- 文字提醒模块 -->
+      <view id="textBox">累计消费8杯正价饮品，赠送10元代金券一张</view>
+    </view>
+    <view class="finishedBox">
+      <view id="finishText">已完成任务</view>
+      <scroll-view id="couponItem" scroll-y="true" wx:for="{{missionCoupon}}">
+        <view class="item">
+          <view class="title">{{item.title}}
+            <view class="time">{{item.time}}</view>
+          </view>
+          <view class="getBtr btr" wx:if="{{item.get==false}}" data-index="{{index}}" bindtap="getCoupon">领取</view>
+          <view class="text btr" wx:if="{{item.get==true}}">已领取</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>
+
+

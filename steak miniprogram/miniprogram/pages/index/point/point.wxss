@@ -1,0 +1,132 @@
+/* 积分商城 */
+.topBar{
+  width: 100%;
+  height: 180rpx;
+  border-bottom: 5rpx rgba(185, 179, 179, 0.863) solid;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+.pointView{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.pointShow{
+  width: 400rpx;
+  height: 120rpx;
+  margin-left: 30rpx;
+  line-height: 120rpx;
+  color: rgb(136, 133, 130);
+  font-size: 20rpx;
+}
+.pointShow text{
+  margin: 20rpx;
+  width: 100rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 40rpx;
+  color:red;
+}
+.pointOrder{
+  width: 100rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 20rpx;
+  margin-right: 30rpx;
+  text-align: center;
+  color: coral;
+}
+.switchView{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+}
+.tap{
+  width: 120rpx;
+  height: 60rpx;
+  text-align: center;
+  font-size: 26rpx;
+  line-height: 60rpx;
+}
+.aView{
+  margin-top:180rpx;
+  width:100%;
+  text-align: center;
+  color:rgb(175, 172, 172);
+  background-color: rgb(240, 237, 236);
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.goodsBox{
+  border-top: 1rpx rgb(248, 246, 246) solid;
+  border-right: 4rpx rgb(216, 216, 216) solid;
+  border-left: 2rpx rgb(236, 235, 235) solid;
+  border-bottom: 4rpx rgb(207, 207, 207) solid;
+  width: 340rpx;
+  height: 450rpx;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+  background-color: white;
+  overflow: hidden;
+}
+.aView text{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 25rpx;
+}
+.image{
+  width: 340rpx;
+  height: 280rpx;
+}
+.goodsName{
+  width: 340rpx;
+  height: 50rpx;
+  color:black;
+}
+.aBox{
+  width: 340rpx;
+  height: 120rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.templateView .buyBtr{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  border-top: 1rpx rgb(231, 200, 152) solid;
+  border-right: 3rpx rgb(206, 183, 150) solid;
+  border-left:1rpx rgb(231, 200, 152) solid;
+  border-bottom: 4rpx rgb(206, 183, 150) solid;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 29rpx;
+  color: rgb(240, 91, 54);
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+}
+.pointPrice{
+  width: 150rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  margin:30rpx 20rpx 0 10rpx;
+  text-align: start;
+}
+.pointPrice text{
+  color: rgb(245, 4, 4);
+  font-size: 29rpx;
+}
+.hoverBuyBtr{
+  background-color: rgb(240, 240, 240);
+}
+.templateView{
+  position: relative;
+  z-index: 0;
+}

@@ -1,0 +1,7 @@
+<!--pages/account/coupon/couponDetail/couponDetail.wxml-->
+<view class="bigBox">
+  <canvas style="width: 200px; height: 200px;" canvas-id="myQrcode" wx:if="{{openQR==true}}"></canvas>
+  <image src="../../../../images/二维码 (2).png" wx:if="{{openQR==false}}" style="width:150rpx; height:150rpx"></image>
+</view>
+<view class="btr" bindtap="openQR" wx:if="{{openQR==false}}">使用优惠券</view>
+<view class="text" wx:if="{{openQR==true}}">请将该二维码出示给服务员。在服务员进行扫码前请勿退出，否则优惠券将会视为已使用。</view>

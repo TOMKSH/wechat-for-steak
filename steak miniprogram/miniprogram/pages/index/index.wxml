@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view id="activityBox"> 
+  <swiper id="scrollBox" autoplay="true" interval="3000" circular="true" indicator-dots="true" indicator-active-color="#ff3300">
+    <swiper-item class="scrollBoxItem"><image src="https://gss0.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/5243fbf2b2119313c56c29d268380cd791238da1.jpg"></image></swiper-item>
+    <swiper-item class="scrollBoxItem"><image src="http://s8.rr.itc.cn/r/wapChange/20164_14_14/a6x1l44121252122352.jpg"></image></swiper-item>
+    </swiper>
+</view>
+<!-- 活动宣传栏 -->
+<view id="bigBox">
+  <view id="midBox">
+    <view id="orderBox">
+      <button id="switch2order" class="go2otherPage" bindtap="switch2order">点单</button>
+    </view>
+    <view id="associatorAct" class="associator">
+      <button id="navigate2associator" class="go2otherPage" bindtap="navigate2associator">叠杯任务</button>
+    </view>
+    <view id="coupon" class="associator">
+      <button id="navigate2coupon" class="go2otherPage" bindtap="switch2coupon">会员中心</button>
+    </view>
+    <!-- 功能栏 -->
+    <view id="smallBox">
+      <view id="bookingButton" bindtap="navigate2booking" class="smallBoxBtr">
+        预约
+      </view>
+      <view id="lotteryButton" bindtap="navigate2lottery" class="smallBoxBtr">
+        抽奖
+      </view>
+      <view id="pointButton" bindtap="navigate2point" class="smallBoxBtr">
+        积分
+      </view>
+      <view id="shareButton" class="smallBoxBtr" >
+        <button open-type="share" >分享</button>
+      </view>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,106 @@
+<!--积分商城-->
+
+<!-- 顶部功能栏 -->
+<view class="topBar">
+  <view class="pointView">
+    <view class="pointShow">我的积分<text>{{pointNum}}</text>分</view>
+    <view class="pointOrder" bindtap="openDetail">
+      积分订单>
+    </view>
+  </view>
+  <view class="switchView">
+    <view class="all tap" bindtap="openAll" style="{{state1}}">全部</view>
+    <view class="couponTap tap" bindtap="openCoupon" style="{{state2}}">代金券</view>
+    <view class="otherTap tap" bindtap="openOther" style="{{state3}}">其他</view>
+  </view>
+</view>
+<!-- 商品页 -->
+ <!-- 全部页 -->
+<view class="allView aView" style="{{displayA}}">
+    <view class="templateView" ><template is="template1" data="{{...coupon[0]}}"></template>
+          <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{coupon[0].point}}" data-title="{{coupon[0].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+    <view class="templateView" ><template is="template1" data="{{...coupon[1]}}"></template>
+          <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{coupon[1].point}}" data-title="{{coupon[1].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+    <view class="templateView" ><template is="template1" data="{{...coupon[2]}}"></template>
+          <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{coupon[2].point}}" data-title="{{coupon[2].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+    <view class="templateView" ><template is="template1" data="{{...other[0]}}"></template>
+          <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{other[0].point}}" data-title="{{other[0].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+    <view class="templateView" ><template is="template1" data="{{...other[1]}}"></template>
+          <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{other[1].point}}" data-title="{{other[1].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+    <view class="templateView" ><template is="template1" data="{{...other[2]}}"></template>
+          <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{other[2].point}}" data-title="{{other[2].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+    <view class="templateView" ><template is="template1" data="{{...other[3]}}"></template>
+          <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{other[3].point}}" data-title="{{other[3].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+    <view class="templateView" ><template is="template1" data="{{...other[4]}}"></template>
+          <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{other[4].point}}" data-title="{{other[4].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+  <text>没有更多数据了</text>
+</view>
+<!-- 代金券页 -->
+<view class="couponView aView" style="{{displayB}}">
+  <view class="templateView" ><template is="template1" data="{{...coupon[0]}}"></template>
+        <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{coupon[0].point}}" data-title="{{coupon[0].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+  <view class="templateView" ><template is="template1" data="{{...coupon[1]}}"></template>
+        <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{coupon[1].point}}" data-title="{{coupon[1].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+  <view class="templateView" ><template is="template1" data="{{...coupon[2]}}"></template>
+        <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{coupon[2].point}}" data-title="{{coupon[2].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+  <text>没有更多数据了</text>
+</view>
+<!-- 其他 -->
+<view class="otherView aView" style="{{displayC}}">
+  <view class="templateView" ><template is="template1" data="{{...other[0]}}"></template>
+        <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{other[0].point}}" data-title="{{other[0].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+  <view class="templateView" ><template is="template1" data="{{...other[1]}}"></template>
+        <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{other[1].point}}" data-title="{{other[1].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+  <view class="templateView" ><template is="template1" data="{{...other[2]}}"></template>
+        <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{other[2].point}}" data-title="{{other[2].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+  <view class="templateView" ><template is="template1" data="{{...other[3]}}"></template>
+        <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{other[3].point}}" data-title="{{other[3].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+  <view class="templateView" ><template is="template1" data="{{...other[4]}}"></template>
+        <view class="buyBtr" hover-class="hoverBuyBtr" data-point="{{other[4].point}}" data-title="{{other[4].title}}" bind:tap="templateClick">
+        购
+      </view></view>
+  <text>没有更多数据了</text>
+</view>
+<!-- 模板 -->
+<template name="template1">
+  <view class="goodsBox">
+    <view class="image"></view>
+    <view class="goodsName">{{title}}</view>
+    <view class="aBox">
+      <view class="pointPrice">
+        <text>{{point}}</text>积分
+      </view>
+    </view>
+  </view>
+</template>
+

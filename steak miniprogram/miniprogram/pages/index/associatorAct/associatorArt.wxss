@@ -1,0 +1,136 @@
+/* pages/associatorAct/associatorArt.wxss */
+#tap{
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+}
+.button{
+  width: 50%;
+  height: 80rpx;
+  background-color: teal;
+  text-align: center;
+  line-height: 80rpx;
+}
+#underwayBox{
+  width: 100%;
+  height: 1220rpx;
+  background-color: #34a5ff;
+  position: relative;
+}
+#activeBox{
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  background-color: #34a5ff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#textBox{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20rpx;
+  color:#ffffff;
+  font-size: 26rpx;
+}
+.circleText{
+  text-align:center;
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.num{
+  font-size: 100rpx;
+  font-weight: 400;
+  color: #fff;
+  line-height: 100rpx;
+}
+ 
+.line{
+  width: 70rpx;
+  height: 10rpx;
+  border-radius: 5rpx;
+  background: #ffffff;
+  margin-top: 12rpx;
+  margin-bottom: 9rpx;
+}
+.total{
+  font-size: 100rpx;
+  font-weight: 400;
+  color: #fff;
+  line-height: 100rpx;
+}
+.canvas{
+  width: 300px;
+  height: 300px;
+}
+.progress{
+  position: absolute;
+}
+#underwayBox .finishedBox{
+  position: absolute;
+  width: 100%;
+  height: 600rpx;
+  background-color: white;
+  bottom: 0rpx;
+  border-top-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+}
+#finishText{
+  width: 100%;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  color:#3799e9;
+  font-weight: 540;
+  border-bottom: 1rpx #34a5ff dashed;
+}
+.item{
+  width: 90%;
+  height: 120rpx;
+  border: 3rpx #34a5ff solid;
+  margin: 10rpx auto;
+  border-radius: 20rpx;
+  position: relative;
+  color:#3799e9;
+}
+.title{
+  width:80%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  position: relative;
+  font-size: 40rpx;
+}
+.title .time{
+  position: absolute;
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size: 24rpx;
+  left: 10rpx;
+  top:10rpx;
+  color:#80c4fc
+}
+.item .btr{
+  width: 100rpx;
+  height:60rpx;
+  position: absolute;
+  border-radius: 15rpx;
+  bottom: 30rpx;
+  right: 20rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+.getBtr{
+  background-color: #34a5ff;
+  color:white;
+  border:1rpx #2d91e2 solid;
+}
+.text{
+  background-color: white;
+  color:#a7cff0
+}

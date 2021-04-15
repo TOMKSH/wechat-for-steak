@@ -1,0 +1,107 @@
+/**index.wxss**/
+
+#activityBox swiper{
+  width:100%;
+  height:530rpx;
+  white-space: nowrap;
+}
+#activityBox .scrollBoxItem{
+  width:100%;
+  height:600rpx;
+  display: inline-block;
+}
+#activityBox .scrollBoxItem image{
+  width: 100%;
+  height: 100%;
+}
+#bigBox{
+  width: 100%;
+  height: 600rpx;
+  background-color:rgb(243, 243, 243);
+  position: fixed;
+}
+#midBox{
+  width:95%;
+  height: 570rpx;
+  margin:20rpx auto;
+  border-radius: 25rpx;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#orderBox{
+  width:690rpx;
+  height: 54%;
+  border:1rpx rgb(231, 200, 152) solid;
+  border-radius: 25rpx;
+  overflow: hidden;
+}
+.associator{
+  width:330rpx;
+  height: 120rpx;
+  border:1rpx rgb(231, 200, 152) solid;
+  border-radius: 15rpx;
+}
+#smallBox{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#smallBox view{
+  width:150rpx;
+  height:110rpx;
+  border:1rpx rgb(231, 200, 152) solid;
+  border-radius: 15rpx;
+}
+.go2otherPage{
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+#switch2order{
+  width:690rpx;
+  height: 308rpx;
+  border-radius:25rpx;
+  line-height: 309rpx;
+  font-size: 40rpx;
+  color:rgb(240, 91, 54) ;
+}
+#navigate2associator{
+  width:330rpx;
+  height: 120rpx;
+  border-radius:15rpx;
+  font-size: 32rpx;
+  line-height: 80rpx;
+  color: rgb(240, 91, 54);
+}
+#navigate2coupon{
+  width:330rpx;
+  height: 120rpx;
+  border-radius:15rpx;
+  font-size: 32rpx;
+  line-height: 80rpx;
+  color: rgb(240, 91, 54);
+}
+.smallBoxBtr{
+  font-size: 26rpx;
+  height: 100rpx;
+  width: 150rpx;
+  border-radius: 15rpx;
+  background-color: white;
+  line-height: 110rpx;
+  text-align: center;
+  color: rgb(240, 91, 54);
+  font-weight: 800;
+  margin-bottom: 10rpx;
+  overflow: hidden;
+}
+#shareButton button{
+  width: 150rpx;
+  height: 100rpx;
+  font-size: 26rpx;
+  color: rgb(240, 91, 54);
+  font-weight: 800;
+  line-height: 80rpx;
+}

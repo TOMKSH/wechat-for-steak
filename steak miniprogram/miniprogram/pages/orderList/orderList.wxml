@@ -1,0 +1,39 @@
+<!--订单详情-->
+<view class="background" wx:if="{{orderList.length==0}}">
+  <view class="noOrder aText">
+    <view class="aBox">
+      <text>暂无订单</text>
+    </view>
+    <view class="btr" bindtap="toOrder">
+        去点单
+      </view>
+  </view>
+  <view class="orderList"></view>
+</view>
+<scroll-view class="backBox" scroll-y="true" wx:if="{{orderList.length!=0}}">
+  <block wx:for="{{orderList}}" wx:for-item="list">
+    <view class="bigView">
+      <scroll-view class="scroll" scroll-y="true">
+        <view class="listBox" wx:for="{{list.orderDetail}}" wx:if="{{detail.name!=null}}" wx:for-item="detail" wx:key="name">
+          <view class="goodsStand box" >
+            <view class="name s_box">{{detail.name}}</view>
+            <view class="num s_box">x{{detail.num}}</view>
+            <view class="price">¥{{detail.aPrice}}</view>
+          </view>
+          <scroll-view class="standScroll" scroll-x="true">
+           <view class="standBox">
+              <view class="standard" wx:for="{{detail.stand}}" wx:if="{{detail.stand!=[]}}">{{item}}.</view>
+              <view class="standard" >默认</view>
+           </view>
+          </scroll-view>
+        </view>
+      </scroll-view>
+      <view class="rightBox">¥{{list.allPrice}}
+        <view class="state">{{list.date}}</view>
+      </view>
+      <view class="bottomBox">
+        订单编号：{{list._id}}
+      </view>
+    </view>
+  </block>
+</scroll-view>

@@ -1,0 +1,27 @@
+/* pages/account/coupon/couponDetail/couponDetail.wxss */
+.bigBox{
+  width: 500rpx;
+  height: 500rpx;
+  margin:20rpx auto;
+  border: 10rpx #e25b26 solid;
+  display: flex;
+  border-radius: 30rpx;
+  justify-content: center;
+  align-items: center;
+}
+.btr{
+  width: 400rpx;
+  height: 80rpx;
+  border: 4rpx #e25b26 solid;
+  border-radius: 20rpx;
+  margin: 30rpx auto;
+  line-height: 80rpx;
+  text-align: center;
+  color: #e25b26;
+}
+.text{
+  width:95%;
+  margin: 30rpx auto;
+  text-align: center;
+  color: rgb(156, 149, 149);
+}

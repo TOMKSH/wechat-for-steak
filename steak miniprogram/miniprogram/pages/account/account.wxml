@@ -1,0 +1,26 @@
+<!--pages/account/account.wxml-->
+<view class="info">
+  <button class="user" plain="true" type="default" bindgetuserinfo="getinfo" open-type="getUserInfo" wx:if="{{info.nickName==undefined}}">登录</button>
+  <view class="user">
+    <image class="img" src="{{info.avatarUrl}}"></image>
+    <view>{{info.nickName}}</view>
+    <progress percent="{{exp}}" activeColor="#EE4000" wx:if="{{info.nickName!=undefined}}" stroke-width="3" border-radius="5"></progress>
+  </view>
+  <view id="lv" wx:if="{{info.nickName!=undefined}}">lv{{lv}}</view>
+</view>
+<view class="case case1">
+  <view id="point" class="box" bindtap="toPoint">积分
+    <view class="show" wx:if="{{info.nickName!=undefined}}">已有{{point}}分</view>
+  </view>
+  <view id="coupon" class="box" bindtap="toCoupon">优惠券
+    <view class="show" wx:if="{{info.nickName!=undefined}}">剩余{{coupon.length}}张</view>
+  </view>
+  <view id="appointment" class="box" bindtap="toAppoint">预约
+  </view>
+</view>
+<view class="case case2">
+  <view id="order" class="box" bindtap="toOrders">订单</view>
+  <view id="lottery" class="box" bindtap="toLottery">抽奖</view>
+  <view id="mission" class="box" bindtap="toMission">叠杯</view>
+</view>
+<view id="text">-小康提供独家技术支持-</view>

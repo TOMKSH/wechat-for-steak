@@ -1,0 +1,30 @@
+/* pages/account/coupon/coupon.wxss */
+.coupon{
+  width: 90%;
+  height: 150rpx;
+  margin:10rpx auto;
+  border: 1rpx #e25b26 solid;
+  border-radius: 30rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.title{
+  width: 80%;
+  height: 150rpx;
+  line-height: 150rpx;
+  border-right: 1rpx #e25b26 dashed;
+  text-align: center;
+  color:#e25b26;
+}
+.btr{
+  height: 150rpx;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btr image{
+  height: 70rpx;
+  width: 70rpx;
+}

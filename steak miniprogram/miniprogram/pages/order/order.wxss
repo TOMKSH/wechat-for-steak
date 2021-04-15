@@ -1,0 +1,369 @@
+/* pages/order/order.wxss */
+#act{
+  width: 100%;
+  height: 280rpx; 
+}
+#actBox{
+  width: 96%;
+  height: 270rpx;
+  margin: auto;
+}
+#actBox image{
+  width: 100%;
+  border-radius: 20rpx;
+}
+#bigBox{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  background-color:	#F7F7F7;
+}
+#smallList{
+  height: 1100rpx;
+  display: flex;
+  flex-flow: column;
+}
+#list{
+  width: 600rpx;
+  height: 1100rpx;
+  overflow: scroll;
+  background-color: #F7F7F7;
+}
+#smallList .button{
+  width:120rpx;
+  height:120rpx;
+  margin: 2rpx 0 2rpx 0;
+  display: block;
+  text-align: center;
+  line-height: 120rpx;
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+  color:rgb(148, 147, 147);
+}
+#list #extra{
+  height: 107rpx;
+}
+#list scroll-view{
+  width: 600rpx;
+}
+.titleText{
+  font-size: 25rpx;
+  color:rgb(240, 135, 104);
+  margin: 10rpx;
+}
+.listBox{
+  width: 580rpx;
+  height: 300rpx;
+  display: flex;
+  margin: 10rpx;
+  border-radius: 15rpx;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  background-color:white;
+}
+.listBox .standard{
+  position: absolute;
+  right:10rpx;
+  bottom: 10rpx;
+  width: 120rpx;
+  height: 50rpx;
+  font-size: 25rpx;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 20rpx;
+  background-color:rgb(240, 91, 54);
+  color:	#FFFAFA;
+}
+.listBox .img{
+  width: 280rpx;
+  height: 280rpx;
+  margin-left: 10rpx;
+  border-radius: 10rpx;
+  background-color:#EEEEEE;
+  overflow: hidden;
+}
+.listBox .showBox{
+  width: 300rpx;
+  height: 290rpx;
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+}
+.listBox .name{
+  width: 280rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+.listBox .text{
+  width: 250rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin: 10rpx;
+  font-size: 22rpx;
+  margin: 10rpx;
+  color:#888888;
+}
+#fixedBox{
+  width: 720rpx;
+  height: 100rpx;
+  background-color: rgb(253, 253, 253);
+  border: 1rpx #dfdfdf solid;
+  position: fixed;
+  bottom: 5rpx;
+  left: 15rpx;
+  border-radius: 25rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+#info{
+  position:relative;
+  width:150rpx;
+  height: 100rpx;
+  margin-left: 70rpx;
+  line-height: 100rpx;
+  font-size: 45rpx;
+  text-align: left;
+}
+#orderView{
+  border-top-right-radius: 25rpx;
+  border-bottom-right-radius: 25rpx;
+}
+#fixedBox #orderButton{
+  width: 200rpx;
+  height: 100%;
+  border-radius: 0 25rpx 25rpx 0;
+  color: rgb(240, 235, 235);
+  line-height: 100rpx;
+  text-align: center;
+}
+#standardView{
+  width:700rpx;
+  height:1000rpx;
+  position: fixed;
+  top:50rpx;
+  left: 25rpx;
+  border-radius: 25rpx;
+  background-color: rgb(241, 241, 241);
+}
+#cancelBox{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 5rpx;
+  right: 3rpx;
+  border-radius: 30rpx;
+  line-height: 60rpx;
+  font-size: 60rpx;
+  color:  #ff6600;
+  font-weight: 300;
+  text-align: center;
+}
+#standardView image{
+  width: 96%;
+  height: 400rpx;
+  background-color: rgb(228, 226, 228);
+  display:block;
+  margin: 10rpx auto 0;
+  border-radius: 25rpx;
+}
+#standardView .goodsName{
+  width: 96%;
+  height: 50rpx;
+  margin:10rpx auto 10rpx;
+  line-height: 50rpx;
+  text-align: right;
+}
+#standardView .goodsTitle{
+  width: 90%;
+  height: 70rpx;
+  margin: auto;
+  line-height: 30rpx;
+  font-size: 26rpx;
+  text-align: right;
+  color: grey;
+}
+#standardView .standBigBox{
+  width: 96%;
+  height: 450rpx;
+  background-color: rgb(241, 241, 241);
+  margin:auto;
+}
+#standardView #numBox{
+  width: 100%;
+  height: 140rpx;
+  background-color: rgb(241, 241, 241);
+  border-bottom-right-radius: 30rpx;
+  border-bottom-left-radius: 30rpx;
+  border-top:1rpx rgb(218, 215, 215) solid;
+  display: flex;
+  flex-flow: row;
+}
+#numBox #priceBox{
+  flex-grow: 8;
+  height: 100%;
+  border-bottom-left-radius: 25rpx;
+  display: flex;
+}
+#numBox #sureBox{
+  width: 200rpx;
+  height: 100%;
+  background-color:rgb(240, 91, 54);
+  border-bottom-right-radius: 25rpx;
+  line-height: 140rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: 	#FFFAFA;
+}
+#priceBox #priceText{
+  margin: 5rpx;
+  width: 320rpx;
+  height: 130rpx;
+  line-height: 130rpx;
+  text-align: center;
+  font-size: 55rpx;
+}
+#priceBox #number{
+  width: 150rpx;
+  height: 130rpx;
+  margin: 5rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#priceText .standard{
+  height: 30rpx;
+  margin: 10rpx;
+  font-size: 22rpx;
+  line-height: 30rpx;
+  color:#575757;
+}
+#number view{
+  width: 50rpx;
+  height: 50rpx;
+  font-size: 50rpx;
+  color: #ff6600;
+  text-align: center;
+  line-height: 50rpx;
+}
+#number #numberText{
+  font-size: 32rpx;
+  background-color: rgb(250, 249, 249);
+  color: black;
+  border-radius: 10rpx;
+}
+.property{
+  width: 80;
+  height: 100rpx;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  margin-left: 20rpx;
+}
+.goodsStandard{
+  /* width: 95rpx; */
+  height: 50rpx;
+  font-size: 25rpx;
+  padding: 10rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  margin: 15rpx;
+  border: 1rpx #ff6600 solid;
+  color: #ff6600;
+  background-color:rgb(238, 238, 238);
+  position:relative;
+}
+.standardText{
+  margin: 20rpx;
+  font-size: 27rpx;
+  color: #ff6600;
+}
+.goodsStandard .selected{
+  position: absolute;
+  background-color: #ff6600;
+  color: rgb(238,238,238);
+  top:0;
+  left: 0;
+  /* width: 95rpx; */
+  height: 50rpx;
+  padding: 10rpx;
+  font-size: 25rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 5rpx;
+}
+#info .numPoint{
+  position: absolute;
+  top:0;
+  right:0;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 30rpx;
+  color: #F7F7F7;
+  font-size: 25rpx;
+  background-color: rgb(236, 77, 77);
+  line-height: 40rpx;
+  text-align: center;
+}
+.selectedList{
+  width: 540rpx;
+  background-color: rgb(253, 253, 253);
+  border: 1rpx rgb(236, 77, 77) solid;
+  border-radius: 20rpx;
+  height: 360rpx;
+  position: fixed;
+  bottom: 105rpx;
+  left: 195rpx;
+  overflow: hidden;
+}
+.selectedList .selectedBlock{
+  height: 250rpx;
+  width: 100%;
+  line-height: 20rpx;
+}
+.selectedBlock .list{
+  width: 95%;
+  height: 50rpx;
+  background-color: rgb(245, 244, 244);
+  border-radius: 10rpx;
+  line-height: 50rpx;
+  margin: 5rpx auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.list view{
+  height: 50rpx;
+  margin: 0 5rpx 0 5rpx;
+  font-size: 26rpx;
+  color: #888888;
+}
+.selectedList .listTop{
+  width: 95%;
+  margin: auto;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  color: #7e7d7d;
+  position: relative;
+}
+.listTop .cancelPoint{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 30rpx;
+  position: absolute;
+  top: 8rpx;
+  right: 3rpx;
+  line-height: 30rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+.list .deleteList{
+  font-size: 40rpx;
+}

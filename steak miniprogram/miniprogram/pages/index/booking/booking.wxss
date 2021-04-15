@@ -1,0 +1,34 @@
+/* pages/index/booking/booking.wxss */
+#aView{
+  width: 90%;
+  height: 300rpx;
+  background-color: rgb(255, 246, 245);
+  margin:20rpx auto ;
+  border-radius: 20rpx;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.items{
+  width: 45%;
+  height: 140rpx;
+  background-color: white;
+  border-radius: 15rpx;
+  line-height: 140rpx;
+  text-align: center;
+  margin: 5rpx;
+  border: 1rpx rgb(212, 201, 201) solid;
+  position: relative;
+}
+.items .checked{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 140rpx;
+  background-color: #07c160;
+  color: white;
+  border-radius: 15rpx;
+  line-height: 140rpx;
+  text-align: center;
+}

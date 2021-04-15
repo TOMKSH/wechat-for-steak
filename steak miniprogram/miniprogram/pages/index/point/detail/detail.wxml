@@ -1,0 +1,11 @@
+<!-- 积分订单 -->
+<!-- 顶部菜单 -->
+<view class="topView">
+  <view class="tap">已购买</view>
+</view>
+<!-- 内容页面 -->
+<scroll-view class="aView" scroll-y="true">
+  <view class="items" wx:for="{{userCoupon}}">{{item.title}}
+    <view class="timeBox">{{item.time}}</view>
+  </view>
+</scroll-view>

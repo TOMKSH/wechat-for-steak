@@ -1,0 +1,19 @@
+<view class="list">
+  <scroll-view> 
+    <block wx:for="{{list}}" wx:key="name">
+      <view class="aBox" wx:if="{{item.name!=null}}">
+        <view class="bBox">
+          <view class="detail">{{item.name}}</view>
+          <view>x{{item.num}}</view>
+          <view class="price">{{item.aPrice}}</view>
+        </view>
+        <view class="stand" wx:for="{{item.stand}}" wx:for-item="stand">
+          {{stand}}.
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="allPrice">总价：{{allPrice}}元</view>
+</view>
+<view class="order" hover-class="h_order" bindtap="order">确定下单</view>
+<view class="order" hover-class="h_order" bindtap="backToOrder">继续点单</view>

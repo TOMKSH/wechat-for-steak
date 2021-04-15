@@ -1,0 +1,47 @@
+.topView{
+  width: 100%;
+  height: 60rpx;
+  position: fixed;
+  top:0;
+  border-bottom: 5rpx rgba(185, 179, 179, 0.863) solid;
+  background-color: white;
+}
+.tap{
+  width: 120rpx;
+  height: 60rpx;
+  text-align: center;
+  font-size: 26rpx;
+  line-height: 60rpx;
+  border-bottom: 5rpx red solid;
+  background-color: white;
+}
+.aView{
+  position: fixed;
+  top:60rpx;
+  width:100%;
+  height: 1150rpx;
+  text-align: center;
+  color:rgb(133, 130, 130);
+  background-color: rgb(240, 237, 236);
+  flex-flow: column;
+  justify-content: center;
+
+}
+.items{
+  width: 90%;
+  height: 100rpx;
+  margin:10rpx auto;
+  border:1rpx rgb(88, 85, 85) solid;
+  border-radius: 20rpx;
+  background-color: white;
+  line-height: 100rpx;
+  position: relative;
+}
+.timeBox{
+  position: absolute;
+  bottom:5rpx;
+  right: 10rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 22rpx;
+}

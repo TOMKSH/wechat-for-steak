@@ -1,0 +1,50 @@
+<!--pages/index/lottery/lottery.wxml-->
+<view class="page">
+  <!-- 抽奖轮盘 -->
+  <view class="bigBox">
+    <view class="box">
+      <view class="boxsub {{luckynum==index?'luck':''}}" wx:for='{{box}}' style="{{index>=0&&index<3?'top:0;left:'+index*175+'rpx;':(index>2&&index<7?'right:0;top:'+((index-3)*175)+'rpx;':(index>5&&index<10?'bottom:0;right:'+(index-6)*175+'rpx;':(index>8&&index<12?'left:0;bottom:'+(index-9)*175+'rpx;':'')))}}{{index=='0'?'top:0;':''}} {{index=='3'?'top:0;':''}} {{index=='6'?'right:0;':''}}{{index=='9'?'left:0;':''}} " wx:key="name">
+          <text class='boxcontent' style='{{item.name.length>6?"line-height:40rpx;margin-top:10rpx;":"line-height:100rpx;"}}'>{{item.name}}</text>
+      </view>
+      <view class="lucky" catchtap="luckyTap">
+          <text class="taplucky">点击抽奖</text>
+          <text class="howMany">您还有<text class="howMany_num" >{{howManyNum}}</text>次抽奖机会</text>
+      </view>
+    </view>
+  </view>
+  <!-- 兑换抽奖按钮与中奖记录按钮 -->
+  <view class="aBox">
+    <button class="exchange" bindtap="openExchange">
+      <text>10积分兑换抽奖机会</text>
+    </button>
+    <button class="record" bindtap="openRecord">
+      <text>我的中奖记录</text>
+    </button>
+  </view>
+  <!-- 活动说明 -->
+  <view class="textBox">
+    <text>活动说明:\n</text>
+    <text>1.抽奖需在页面点击“积分兑换抽奖机会”，每10积分可兑换一次抽奖机会；\n</text>
+    <text>2.积分一经消耗无法退回；\n</text>
+  </view>
+</view>
+<!-- 积分兑换模块 -->
+<view class="exchangeView aView" style="display:{{displayA}}">
+  <view class="title">
+    <text>10积分\n</text>
+    <text>兑换一次抽奖机会</text>
+  </view>
+  <view class="pointBox">
+      <view class="pointText">可用积分</view>
+      <view class="pointNum">{{pointNum}}分</view>
+  </view>
+  <view class="exchangePointBtr" bindtap="exchangePoint">立即兑现</view>
+</view>
+<view class="cancel" style="display:{{displayA}}" bindtap="cancelView">×</view>
+<!-- 中奖记录显示模块 -->
+<view class="recordView aView" style="display:{{displayB}}">
+  <view class="title"><text>我的中奖记录</text></view>
+  <view class="recordList" wx:for="{{recordBox}}" wx:key="name"><text>{{item}}</text></view>
+</view>
+<!-- 取消按钮 -->
+<view class="cancel" style="display:{{displayB}}" bindtap="cancelView">×</view>

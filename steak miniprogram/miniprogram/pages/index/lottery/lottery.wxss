@@ -1,0 +1,179 @@
+/* pages/index/lottery/lottery.wxss */
+.page{
+  background-color: rgb(226, 19, 19);
+  width:100%;
+  position:absolute;
+  top:0;
+}
+.bigBox{
+  width:100%;
+  height: 750rpx;
+  border-bottom: 1rpx rgb(167, 9, 9) dashed;
+}
+.box{
+  border-radius: 10rpx;
+  margin:200rpx auto;
+  height: 700rpx;
+  width: 700rpx;
+  position: relative;
+}
+.boxsub{
+  width: 175rpx;
+  height: 175rpx;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius:10rpx;
+  background: #ff6100;
+  border: 1rpx solid #fff;
+ 
+}
+.boxcontent{
+  text-align: center;
+  font-size: 26rpx;
+  display: block;
+  color: #fff;
+}
+.lucky{
+  width: 300rpx;
+  height:130rpx;
+  background:#ff6100;/* #ff6100;007FFF*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0rpx;
+  margin: auto;
+  border-radius: 20rpx;
+}
+
+.lucky:active{
+  opacity: 0.7;
+}
+.taplucky{
+  display: block;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  height: 50rpx;
+  color: #fff;
+  margin-top: 20rpx;
+}
+.howMany{
+  display: block;
+  text-align: center;
+  font-size: 26rpx;
+  color: #fff;
+  line-height: 40rpx;
+  height: 40rpx;
+}
+.howMany_num{
+  color:#007FFF;
+  font-size:32rpx;
+  line-height:40rpx;
+  padding:0 10rpx;
+}
+.luck{
+  opacity: 0.5;
+  background: #ff6100;
+}
+.aBox{
+  width: 700rpx;
+  height: 80rpx;
+  margin: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-top: 10rpx;
+}
+.exchange{
+  width: 100rpx;
+  height: 50rpx;
+  background-color: red;
+  color: white;
+  border-radius: 25rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 50rpx;
+  padding:0;
+}
+.record{
+  width: 100rpx;
+  height: 50rpx;
+  background-color: red;
+  color: white;
+  border-radius: 25rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 50rpx;
+  padding:0;
+}
+.textBox{
+  width: 650rpx;
+  height: 300rpx;
+  padding:10rpx;
+  border-radius: 20rpx;
+  margin: auto;
+  color:white;
+  background-color: rgba(165, 23, 23, 0.562);
+}
+.aView{
+  width: 480rpx;
+  height:500rpx;
+  position: fixed;
+  top:300rpx;
+  left: 135rpx;
+  background-color: rgb(150, 16, 16);
+  border-radius:25rpx;
+}
+.cancel{
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 75rpx;
+  color: white;
+  font-size: 80rpx;
+  font-weight: 200;
+  text-align: center;
+  position:fixed;
+  top:825rpx;
+  left:338rpx;
+  border-radius: 50rpx;
+  background-color: rgb(150, 16, 16);
+}
+.title{
+  text-align: center;
+  color:rgb(235, 235, 113);
+  font-size: 32rpx;
+  margin:50rpx auto 50rpx;
+}
+.pointBox{
+  width: 440rpx;
+  margin: 50rpx auto;
+  display: flex;
+  flex-flow: row;
+  justify-content:space-between ;
+  color: #e0ad21;
+  font-size: 26rpx;
+}
+.exchangePointBtr{
+  width:240rpx;
+  height: 60rpx;
+  position:absolute;
+  bottom:20rpx;
+  left: 120rpx;
+  border: 1rpx white solid;
+  border-radius: 20rpx;
+  text-align: center;
+  line-height: 60rpx;
+  color: white;
+  font-size: 32rpx;
+}
+.recordList{
+  width:440rpx;
+  margin:auto;
+}
+.recordList text{
+  margin:10rpx auto 50rpx;
+  color: whitesmoke;
+  font-size: 26rpx;
+  line-height: 50rpx;
+}

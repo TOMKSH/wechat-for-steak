@@ -1,0 +1,6 @@
+<!--pages/index/booking/bookingNumber/bookingNumber.wxml-->
+<view class="aView">
+  <view class="number">{{type}}{{number}}</view>
+  <view class="text"><text>请勿退出此页面，留意前台的叫号，如轮到您的号码，请及时与服务员联系，叫号五分钟内有效。</text></view>
+</view>
+<button bindtap="backToIndex">返回首页</button>

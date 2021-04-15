@@ -1,0 +1,7 @@
+<!--优惠券页面-->
+<scroll-view scroll-y="true" id="scrollView">
+  <view class="coupon" wx:for="{{coupon}}">
+    <view class="title">{{item}}</view>
+    <view class="btr" data-title="{{item}}" data-index="{{index}}" bindtap="toCouponDetail"><image src="../../../images/二维码.png"></image></view>
+  </view>
+</scroll-view>

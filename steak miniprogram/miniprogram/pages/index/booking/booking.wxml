@@ -1,0 +1,10 @@
+<!--pages/index/booking/booking.wxml-->
+<text>请问您的就餐人数是：</text>
+<view id="aView">
+  <view class="items" wx:for="{{items}}" data-index="{{index}}" data-type="{{item.type}}" bindtap="check">{{item.title}}
+    <view class="checked" wx:if="{{item.checked==true}}">
+      {{item.title}}
+    </view>
+  </view>
+</view>
+<button type="primary" bindtap="toBookingNumber">确定</button>

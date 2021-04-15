@@ -1,0 +1,196 @@
+<!--pages/order/order.wxml-->
+<!-- 点单页 -->
+<!-- 顶部栏 -->
+<view id="act">
+  <swiper id="actBox" autoplay="true" interval="3000" circular="true" indicator-dots="true" indicator-active-color="#ff3300">
+    <swiper-item>
+      <image src="https://gss0.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/5243fbf2b2119313c56c29d268380cd791238da1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://s8.rr.itc.cn/r/wapChange/20164_14_14/a6x1l44121252122352.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 主体 -->
+<view id="bigBox">
+  <!-- 左边滑动栏 -->
+  <view id="smallList">
+   <view wx:for="{{smallList}}">
+    <view class="button" wx:if="{{item.selected==0}}" style="background-color:#F7F7F7;" bindtap="scrollTo" data-to="{{item.to}}" data-index="{{index}}">{{item.name}}</view>
+    <view class="button" wx:else="{{item.selected==1}}" style="background-color: white;  border: 1rpx #dfdfdf solid;" bindtap="scrollTo" data-to="{{item.to}}" data-index="{{index}}">{{item.name}}</view>
+   </view>
+  </view>
+  <!-- 右边菜单栏 -->
+  <view id="list">
+    <scroll-view scroll-y="true" scroll-into-view="{{toView}}" style="height: 1300rpx;" scroll-anchoring="true" enhanced='true'  binddragend="scrollEnd">
+      <!-- 为了使用bindscroll事件成功 -->
+      <view>
+      <!-- 推荐模块 -->
+        <view  id="commend">
+          <text class="titleText">#推荐#</text>
+          <view wx:for="{{commend}}">
+            <view class="listBox">
+              <image class="img" src="{{item.image}}"></image>
+              <view class="showBox">
+                <view class="name">{{item.name}}</view>
+                <view class="text">{{item.text}}</view>
+              </view>
+              <view class="standard" bindtap="openStandardView" data-index="{{index}}" data-items="{{item}}" data-standard="{{goodsStandard}}" data-image="{{item.image}}">
+                规格
+              </view>
+            </view>
+          </view>
+        </view>
+        <!-- 套餐模块 -->
+        <view id="setMeal">
+          <text class="titleText">#套餐#</text>
+          <view wx:for="{{setMeal}}">
+            <view class="listBox">
+              <image class="img" src="{{item.image}}"></image>
+              <view class="showBox">
+                <view class="name">{{item.name}}</view>
+                <view class="text">{{item.text}}</view>
+              </view>
+              <view class="standard" bindtap="openStandardView" data-index="{{index}}" data-items="{{item}}" data-standard="{{goodsStandard}}" data-image="{{item.image}}">
+                规格
+              </view>
+            </view>
+          </view>
+        </view>
+        <!-- 主食模块 -->
+        <view id="stapleFood">
+          <text class="titleText">#主食#</text>
+          <view wx:for="{{stapleFood}}">
+            <view class="listBox">
+              <image class="img" src="{{item.image}}"></image>
+              <view class="showBox">
+                <view class="name">{{item.name}}</view>
+                <view class="text">{{item.text}}</view>
+              </view>
+              <view class="standard" bindtap="openStandardView" data-index="{{index}}" data-items="{{item}}" data-standard="{{goodsStandard}}" data-image="{{item.image}}">
+                规格
+              </view>
+            </view>
+          </view>
+        </view>
+        <!-- 小吃模块 -->
+        <view id="snack">
+          <text class="titleText">#小吃#</text>
+          <view wx:for="{{snack}}">
+            <view class="listBox">
+              <image class="img" src="{{item.image}}"></image>
+              <view class="showBox">
+                <view class="name">{{item.name}}</view>
+                <view class="text">{{item.text}}</view>
+              </view>
+              <view class="standard" bindtap="openStandardView" data-index="{{index}}" data-items="{{item}}" data-image="{{item.image}}">
+                规格
+              </view>
+            </view>
+          </view>
+        </view>
+        <!-- 奶茶模块 -->
+        <view id="mikeTea">
+          <text class="titleText">#奶茶#</text>
+          <view wx:for="{{mikeTea}}">
+            <view class="listBox">
+              <image class="img" src="{{item.image}}"></image>
+              <view class="showBox">
+                <view class="name">{{item.name}}</view>
+                <view class="text">{{item.text}}</view>
+              </view>
+              <view class="standard" bindtap="openStandardView" data-index="{{index}}" data-items="{{item}}" data-standard="{{goodsStandard}}" data-image="{{item.image}}">
+                规格
+              </view>
+            </view>
+          </view>
+        </view>
+        <!-- 果茶模块 -->
+        <view id="fruitTea">
+          <text class="titleText">#果茶#</text>
+          <view wx:for="{{fruitTea}}">
+            <view class="listBox">
+              <image class="img" src="{{item.image}}"></image>
+              <view class="showBox">
+                <view class="name">{{item.name}}</view>
+                <view class="text">{{item.text}}</view>
+              </view>
+              <view class="standard" bindtap="openStandardView" data-index="{{index}}" data-items="{{item}}" data-standard="{{goodsStandard}}" data-image="{{item.image}}">
+                规格
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+    <!-- 避免被fixedBox阻挡 -->
+    <view id="extra"></view>
+  </view>
+</view>
+<!-- 结算栏 -->
+<view id="fixedBox">
+  <view id="info">¥{{allPrice}}
+    <view class="numPoint" style="{{display2}}" bindtap="openSelectedList">{{selectedListLength}}</view>
+  </view>
+  <view id="orderView">
+    <view id="orderButton" wx:if="{{allPrice>0}}" bindtap="openOrderDetail" style="background-color:#ff6633">去下单</view>
+    <view id="orderButton" wx:else="{{allPrice==0}}" style="background-color:#388E8E">去下单</view>
+  </view>
+</view>
+<!-- 规格栏 -->
+<view id="standardView" style="display: {{display}};" >
+  <!-- 取消按钮 -->
+  <view id="cancelBox" bindtap="cancelStandardView">×</view>
+  <!-- 图片 -->
+  <image src="{{standardImage}}">图片位置</image>
+  <scroll-view class="standBigBox" scroll-y="true">
+     <!-- 名称与简介 -->
+    <view class="goodsName">{{goodsProperty1.name}}</view>
+    <view class="goodsTitle">{{goodsProperty1.text}}</view>
+  <!-- 属性选择栏 -->
+    <block  wx:for="{{goodsProperty2}}" wx:for-item="property" wx:key="standard">
+    <view  capture-bind:tap="getproIndex" data-pro-index="{{index}}">
+      <text class="standardText">{{property.standardName}}</text>
+      <view class="property">
+        <view class="goodsStandard" hover-class="selected" wx:for="{{property._standard}}" data-length="{{property._standard.length}}"  data-selected="{{item.selected}}" data-index="{{index}}" data-value="{{item.value}}" data-items="{{item}}" bindtap="select">
+          {{item.value}}
+          <view wx:if="{{item.selected==true}}" class="selected">{{item.value}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+  </scroll-view>
+  <!-- 属性显示面板与加入购物车 -->
+  <view id="numBox">
+    <!-- 属性显示面板 -->
+    <view id="priceBox">
+      <!-- 价格与已选择属性显示栏 -->
+      <view id="priceText">¥{{goodsProperty1.price}}</view>
+      <!-- 数目增减栏 -->
+      <view id="number">
+        <view bindtap="subNum">-</view>
+        <view id="numberText">{{number}}</view>
+        <view bindtap="addNum">+</view>
+      </view>
+    </view>
+    <!-- 加入购物车按钮 -->
+    <view id="sureBox" data-aPrice="{{aPrice}}" data-stand1="{{stand1}}" data-stand2="{{stand2}}" data-stand3="{{stand3}}" data-num="{{number}}" bindtap="addShop">
+      加入购物车
+    </view>
+  </view>
+</view>
+<!-- 已选菜单 -->
+<view class="selectedList" style="display:{{display1}}">
+  <view class="listTop">已点清单
+    <view class="cancelPoint" bindtap="cancelSelectedList">×</view>
+  </view>
+  <scroll-view class="selectedBlock" scroll-y="true">
+    <block wx:for="{{selectedList}}">
+      <view class="list">
+        <view>{{item.name}}x{{item.num}}</view>
+        <view>¥{{item.aPrice}}</view>
+        <view class="deleteList" bindtap="deleteList" data-index="{{index}}" data-aprice="{{item.aPrice}}">×</view>
+      </view>
+    </block>
+  </scroll-view>
+</view>
